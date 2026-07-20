@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Eine magische dreispaltige Slotmaschine mit zufälligen Kreaturentypen."
+  />
+  <title>Magische Auslosung</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="game-card" aria-labelledby="page-title">
+      <div class="ornament ornament-top" aria-hidden="true"></div>
+
+      <header class="hero">
+        <p class="eyebrow">DIE MAGISCHE AUSLOSUNG</p>
+        <h1 id="page-title">Drei Kreaturen. Ein Schicksal.</h1>
+        <p class="subtitle">
+          Beschwöre drei zufällige Kreaturentypen aus den Tiefen des Multiversums.
+        </p>
+      </header>
+
+      <button id="drawButton" class="draw-button" type="button">
+        <span class="button-glow" aria-hidden="true"></span>
+        <span class="button-text">AUSLOSEN</span>
+      </button>
+
+      <section
+        class="slot-machine"
+        aria-label="Dreispaltige Slotmaschine"
+        aria-live="polite"
+      >
+        <div class="slot-frame">
+          <div class="slot" data-slot="0">
+            <span class="slot-word">Advisor</span>
+          </div>
+          <div class="slot" data-slot="1">
+            <span class="slot-word">Ally</span>
+          </div>
+          <div class="slot" data-slot="2">
+            <span class="slot-word">Ape</span>
+          </div>
+        </div>
+
+        <div class="machine-lights" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </section>
+
+      <p id="statusText" class="status-text">
+        Drücke auf „AUSLOSEN“, um die Magie zu entfesseln.
+      </p>
+
+      <p id="punchline" class="punchline" hidden>
+        Ohh, tut mir leid es ist nur ein Pikachuuuuuuu...
+      </p>
+
+      <div class="ornament ornament-bottom" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
